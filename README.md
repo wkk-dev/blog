@@ -1,1 +1,2 @@
-# blog
+# Blog
+[blog.wkk-dev.one]
