@@ -417,7 +417,7 @@ inject:
     -
   # Inject custom footer html code
   footer: 
-    - <link rel="stylesheet" href="/css/twikoo.css">
+    - <link rel="stylesheet" href="https://image.wkk-dev.one/file/css/1748144367811_twikoo.css">
     -
 # INJECT <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
