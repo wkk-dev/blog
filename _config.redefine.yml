@@ -346,7 +346,7 @@ comment:
   # Whether to enable comment
   enable: true
   # Comment system
-  system: twikoo # waline, gitalk, twikoo, giscus
+  system: waline # waline, gitalk, twikoo, giscus
   # System configuration
   config:
     # Waline comment system. See https://waline.js.org/
@@ -413,7 +413,7 @@ footer:
 # Docs: https://redefine-docs.ohevan.com/inject
 inject:
   # Whether to enable inject
-  enable: true
+  enable: false
   # Inject custom head html code
   head: 
     - <script src="/js/custom.js"></script>
