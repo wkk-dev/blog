@@ -413,11 +413,11 @@ inject:
   enable: true
   # Inject custom head html code
   head: 
-    -
+    - 
     -
   # Inject custom footer html code
   footer: 
-    - <link rel="stylesheet" href="https://image.wkk-dev.one/file/css/1748144367811_twikoo.css">
+    -<link rel="stylesheet" href="/css/twikoo.css">
     -
 # INJECT <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
@@ -467,7 +467,7 @@ cdn:
   # Whether to enable CDN
   enable: true
   # CDN Provider
-  provider: npmmirror # npmmirror, zstatic, cdnjs, jsdelivr, unpkg, custom
+  provider: zstatic #npmmirror # npmmirror, zstatic, cdnjs, jsdelivr, unpkg, custom
   # Custom CDN URL
   # format example: https://cdn.custom.com/hexo-theme-redefine/${version}/source/${path}
   # The ${path} must leads to the root of the "source" folder of the theme
