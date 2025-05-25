@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: Kang wang's Blog
 subtitle: ''
 description: ''
 keywords:
-author: John Doe
-language: en
+author: Kang wang
+language: zh-CN
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: http://wkk-dev.one
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -132,7 +132,7 @@ minify:
       persistCache: true # Enable persistent caching of processed images
       # Stores optimized images on disk to accelerate subsequent builds
     exclude: # Excluded files (string[] compatible with micromatch patterns)
-    
+
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
