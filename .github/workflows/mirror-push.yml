@@ -28,13 +28,17 @@ jobs:
           node-version: ${{ matrix.node-version }}
           registry-url: https://registry.npmjs.org/
 
-      - name: 📦 Install Dependencies
+      - name: 📦 Install Dependencies Step1
         run: npm install hexo-cli -g
+        
+      - name: 📦 Install Dependencies Step2
         run: npm i
 
-      - name: build blog
-        run: npm clean
-        run: npm g
+      - name: build step1
+        run: hexo clean
+
+      - name: build step2
+        run: hexo g
 
       - name: to target repo
         uses: s0/git-publish-subdir-action@develop
