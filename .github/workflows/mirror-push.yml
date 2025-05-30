@@ -1,0 +1,47 @@
+name: GitHub Pages
+
+on:
+  # 在触发push的时候执行
+  push:
+    branches:
+      # The branch where the project source code resides
+      # 项目源代码所在的分支
+      - mymain
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        node-version: [lts/*]
+        os: [ubuntu-latest]
+      fail-fast: false
+
+    steps:
+
+      - uses: actions/checkout@v2
+       
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+          registry-url: https://registry.npmjs.org/
+
+      - name: 📦 Install Dependencies
+        run: npm i
+
+      - name: build blog
+        run: npm run build
+
+      - name: to target repo
+        uses: s0/git-publish-subdir-action@develop
+        env:
+          # 换成自己的目标仓库
+          REPO: git@github.com:owner/repo.git 
+          # 目标分支
+          BRANCH: gh-pages 
+          # 要推送的目录
+          FOLDER: dist 
+          # 保存在secrets里面生成的ssh私钥
+          SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_PRIVATE_KEY }}
