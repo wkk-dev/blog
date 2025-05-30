@@ -42,7 +42,7 @@ jobs:
           # 换成自己的目标仓库
           REPO: git@github.com:wkk-dev/blog.git
           # 目标分支
-          BRANCH: dev
+          BRANCH: main
           # 要推送的目录
           FOLDER: dist 
           # 保存在secrets里面生成的ssh私钥
