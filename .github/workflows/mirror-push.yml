@@ -33,7 +33,7 @@ jobs:
           npm install hexo-cli -g
           npm i
 
-      - name: build step1
+      - name: build
         run: |
           hexo clean
           hexo g
