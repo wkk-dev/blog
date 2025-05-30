@@ -29,10 +29,12 @@ jobs:
           registry-url: https://registry.npmjs.org/
 
       - name: 📦 Install Dependencies
+        run: npm install hexo-cli -g
         run: npm i
 
       - name: build blog
-        run: npm run build
+        run: npm clean
+        run: npm g
 
       - name: to target repo
         uses: s0/git-publish-subdir-action@develop
