@@ -38,9 +38,9 @@ jobs:
         uses: s0/git-publish-subdir-action@develop
         env:
           # 换成自己的目标仓库
-          REPO: git@github.com:owner/repo.git 
+          REPO: git@github.com:wkk-dev/blog.git
           # 目标分支
-          BRANCH: gh-pages 
+          BRANCH: dev
           # 要推送的目录
           FOLDER: dist 
           # 保存在secrets里面生成的ssh私钥
