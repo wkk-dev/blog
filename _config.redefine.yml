@@ -369,7 +369,7 @@ comment:
       proxy: # GitHub repository proxy
     # Twikoo comment system. See https://twikoo.js.org/
     twikoo:
-      version: 1.6.44 # Twikoo version, do not modify if you dont know what it is
+      version: 1.6.41 # Twikoo version, do not modify if you dont know what it is
       server_url: https://twikoo.api.wkk-dev.one # Twikoo server URL. e.g. https://example.example.com
       region: # Twikoo region. can be empty
     # Giscus comment system. See https://giscus.app/
@@ -416,12 +416,12 @@ inject:
   enable: false
   # Inject custom head html code
   head: 
-    - <script src="/js/custom.js"></script>
+  #  - <script src="/js/custom.js"></script>
     -
   # Inject custom footer html code
   footer: 
-  #  - <link rel="stylesheet" href="/css/twikoo.css">
-    - <script src="/js/custom.js"></script>
+    - <link rel="stylesheet" href="/css/twikoo.css">
+  #  - <script src="/js/custom.js"></script>
 # INJECT <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
