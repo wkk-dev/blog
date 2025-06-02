@@ -167,7 +167,7 @@ home_banner:
     # Whether to enable
     enable: false
     # Social links style
-    style: default # default, reverse, center
+    style: 默认 # default, reverse, center
     # Social links
     links:
       github:  # your GitHub URL
