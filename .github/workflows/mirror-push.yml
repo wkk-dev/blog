@@ -42,7 +42,7 @@ jobs:
         uses: s0/git-publish-subdir-action@develop
         env:
           # 换成自己的目标仓库
-          REPO: git@github.com:wkk-dev/blog-mirror.git
+          REPO: git@github.com:wkk-dev/blog.git
           # 目标分支
           BRANCH: main
           # 要推送的目录
